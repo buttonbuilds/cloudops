@@ -62,7 +62,7 @@ sg-int-lb | HTTP | 80 | sg-web-tier
 "" | ICMP | | sg-web-tier
 sg-app-tier | HTTP | 80 | sg-int-lb
 "" | ICMP | | sg-int-lb
-sg-rds-tier | Customer TCP | 3306 | sg-app-tier
+sg-rds-tier | Custom TCP | 3306 | sg-app-tier
 
 ## Authors and Acknowledgment
 
