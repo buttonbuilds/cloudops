@@ -66,5 +66,4 @@ sg-rds-tier | Customer TCP | 3306 | sg-app-tier
 
 ## Authors and Acknowledgment
 
-* Brandon Aw for finding this User Data from the Internet
 * Everyone in TFIP programme for the constant support
