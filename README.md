@@ -41,14 +41,16 @@ Use the following user data for the EC2 instances
 
 ```bash
 #!/bin/bash
-# Install Apache Web Server and PHP
-yum install -y httpd mysql php
-# Download Lab files
-wget https://aws-tc-largeobjects.s3.amazonaws.com/AWS-TC-AcademyACF/acf-lab3-vpc/lab-app.zip
-unzip lab-app.zip -d /var/www/html/
-# Turn on web server
-chkconfig httpd on
-service httpd start
+
+sudo su
+
+yum update -yum
+yum install -y httpd.x86_64
+systemctl start httpd.service
+systemctl enable httpd.service
+az=$(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone)
+
+echo "Hello World from $(hostname -f) residing in $az" > /var/www/html/index.html
 ```
 ## Security Groups
 SG Name | Type | Port Range | Source
