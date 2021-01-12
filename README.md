@@ -15,6 +15,7 @@ Private subnet db-tier-2 | 192.168.5.0/24 | ap-southeast-1b
 
 ## Create an Internet Gateway
 You would have to select the newly created IGW and attach it to your VPC
+
 ![alt text](https://github.com/buttonbuilds/cloudops/blob/main/images/igw.png?raw=true)
 
 ## Route Tables
