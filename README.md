@@ -44,7 +44,7 @@ Use the following user data for the EC2 instances
 
 sudo su
 
-yum update -yum
+yum update -y
 yum install -y httpd.x86_64
 systemctl start httpd.service
 systemctl enable httpd.service
